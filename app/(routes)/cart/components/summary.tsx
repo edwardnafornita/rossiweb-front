@@ -13,7 +13,7 @@ const Summary = () => {
     const items = useCart((state) => state.items);
     const removeAll = useCart((state) => state.removeAll);
     const totalPrice = items.reduce((total, item) => {
-        return total = Number(item.price);
+        return total += Number(item.price);
     }, 0);
 
     useEffect(() => {
